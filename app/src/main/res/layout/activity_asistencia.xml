@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <EditText
+            android:id="@+id/tituloEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título de la asistencia" />
+
+    <EditText
+            android:id="@+id/fechaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha (yyyy-MM-dd)" />
+
+    <EditText
+            android:id="@+id/usuarioIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario ID" />
+
+    <EditText
+            android:id="@+id/estudiantesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IDs de estudiantes separados por coma" />
+
+    <Button
+            android:id="@+id/confirmarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar" />
+
+    <Button
+            android:id="@+id/cancelarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar" />
+</LinearLayout>
