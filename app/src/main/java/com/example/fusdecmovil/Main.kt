@@ -1,8 +1,6 @@
 package com.example.fusdecmovil
 
-import models.administrativo.Usuario
-import models.administrativo.auditoria.DemoAuditoria
-import models.questions.*
+import com.example.fusdecmovil.models.questions.Menu
 
 fun main() {
 

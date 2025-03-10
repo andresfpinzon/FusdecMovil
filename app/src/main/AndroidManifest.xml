@@ -11,6 +11,10 @@
             android:theme="@style/Theme.FusdecMovil"
             tools:targetApi="31">
         <activity
+                android:name=".ui.activities.asistencia.BrigadaActivity"
+                android:exported="false"
+                android:theme="@style/Theme.FusdecMovil"/>
+        <activity
                 android:name=".MainActivity"
                 android:exported="true"
                 android:label="@string/app_name"
@@ -21,12 +25,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
         <activity
                 android:name=".ui.activities.asistencia.AsistenciaActivity"
                 android:exported="true"
                 android:theme="@style/Theme.FusdecMovil"/>
-
     </application>
 
 </manifest>

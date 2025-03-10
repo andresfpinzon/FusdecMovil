@@ -1,7 +1,5 @@
 package models.administrativo.colegio
 
-import java.util.*
-
 class ColegioServicio(){
 
     companion object{

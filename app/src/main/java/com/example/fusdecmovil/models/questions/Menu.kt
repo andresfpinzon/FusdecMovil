@@ -1,15 +1,16 @@
-package models.questions
+package com.example.fusdecmovil.models.questions
 
 import models.secretario.estudiante.Estudiante
 import models.secretario.estudiante.EstudianteController
-import controllers.instructor.asistencia.AsistenciaController
+import com.example.fusdecmovil.controllers.instructor.asistencia.AsistenciaController
 import models.instructor.asistencia.Asistencia
 
 import models.administrativo.comando.Comando
 import models.administrativo.comando.ComandoController
 
-import models.administrativo.brigada.Brigada
-import models.administrativo.brigada.BrigadaController
+//import controllers.brigada.BrigadaController
+//import models.administrativo.brigada.Brigada
+
 
 import models.administrativo.unidad.Unidad
 import models.administrativo.unidad.UnidadController
@@ -61,7 +62,7 @@ class Menu {
             print("Opción: ")
             when (scanner.nextInt()) {
                 1 -> crudAuditoria()
-                2 -> crudBrigada()
+//                2 -> crudBrigada()
                 3 -> crudCertificado()
                 4 -> crudColegio()
                 5 -> crudComando()
@@ -134,24 +135,24 @@ class Menu {
             }
         }
 
-        private fun crudBrigada() {
-            var brigadas = mutableListOf(Brigada.Brigada1,Brigada.Brigada2,Brigada.Brigada3)
-            println("Acciones CRUD para Brigada:")
-            println("1. Crear Brigada")
-            println("2. Leer Brigada")
-            println("3. Actualizar Brigada")
-            println("4. desactivar Brigada")
-            println("5. Volver")
-            print("Opción: ")
-            when (scanner.nextInt()) {
-                1 -> BrigadaController.crearBrigada(brigadas)
-                2 -> BrigadaController.actualizarBrigada(brigadas)
-                3 -> BrigadaController.listarBrigadasActivas(brigadas)
-                4 -> BrigadaController.desactivarBrigada(brigadas)
-                5 -> return
-                else -> println("Opción no válida, intente de nuevo.")
-            }
-        }
+//        private fun crudBrigada() {
+//            var brigadas = mutableListOf(Brigada.Brigada1,Brigada.Brigada2,Brigada.Brigada3)
+//            println("Acciones CRUD para Brigada:")
+//            println("1. Crear Brigada")
+//            println("2. Leer Brigada")
+//            println("3. Actualizar Brigada")
+//            println("4. desactivar Brigada")
+//            println("5. Volver")
+//            print("Opción: ")
+//            when (scanner.nextInt()) {
+//                1 -> BrigadaController.crearBrigada(brigadas)
+//                2 -> BrigadaController.actualizarBrigada(brigadas)
+//                3 -> BrigadaController.listarBrigadasActivas(brigadas)
+//                4 -> BrigadaController.desactivarBrigada(brigadas)
+//                5 -> return
+//                else -> println("Opción no válida, intente de nuevo.")
+//            }
+//        }
 
         private fun crudCertificado() {
             println("Acciones CRUD para Certificado:")

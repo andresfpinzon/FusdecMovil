@@ -1,4 +1,4 @@
-package controllers.instructor.asistencia
+package com.example.fusdecmovil.controllers.instructor.asistencia
 
 import models.instructor.asistencia.Asistencia
 import servicios.instructor.asistencia.AsistenciaServicio

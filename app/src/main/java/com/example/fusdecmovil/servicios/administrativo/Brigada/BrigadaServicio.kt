@@ -1,6 +1,6 @@
-package models.administrativo.brigada
+package models.administrativo.Brigada
 
-import java.util.*
+import models.administrativo.brigada.Brigada
 
 class BrigadaServicio(){
 
