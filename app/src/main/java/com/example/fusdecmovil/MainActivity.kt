@@ -21,6 +21,7 @@ import android.content.Context
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.ui.unit.dp
+import com.example.fusdecmovil.ui.activities.Brigada.BrigadaActivity
 
 
 class MainActivity : ComponentActivity() {
@@ -32,7 +33,8 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     MainScreen(
                         modifier = Modifier.padding(innerPadding),
-                        onAsistenciaClick = { abrirAsistenciaActivity() }
+//                        onAsistenciaClick = { abrirAsistenciaActivity() }
+                        onBrgadaclick = { abrirBrigadaActivity()}
                     )
                 }
             }
@@ -43,10 +45,15 @@ class MainActivity : ComponentActivity() {
         val intent = Intent(this, AsistenciaActivity::class.java)
         startActivity(intent)
     }
+    private fun abrirBrigadaActivity() {
+        val intent = Intent(this, BrigadaActivity::class.java )
+        startActivity(intent)
+    }
+
 }
 
 @Composable
-fun MainScreen(modifier: Modifier = Modifier, onAsistenciaClick: () -> Unit) {
+fun MainScreen(modifier: Modifier = Modifier, onBrigadaActivity: () -> Unit) {
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -55,9 +62,10 @@ fun MainScreen(modifier: Modifier = Modifier, onAsistenciaClick: () -> Unit) {
     ) {
         Text(text = "Bienvenido a FusdecMovil!")
         Spacer(modifier = Modifier.height(16.dp))
-        Button(onClick = onAsistenciaClick) {
-            Text("Ir a Asistencia")
+        Button(onClick = onBrigadaActivity) {
+            Text("Ir a Brigada")
         }
+
     }
 }
 

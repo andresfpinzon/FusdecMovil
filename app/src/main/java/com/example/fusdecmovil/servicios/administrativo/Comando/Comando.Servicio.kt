@@ -1,10 +1,12 @@
 package models.administrativo.comando
 
+import models.administrativo.brigada.Brigada
+
 class ComandoServicio(){
 
     companion object{
         fun crearComando(
-            comandos: MutableList<Comando>,
+            comandos: MutableList<Brigada>,
             id: String,
             nombreComando: String,
             estadoComando: Boolean,

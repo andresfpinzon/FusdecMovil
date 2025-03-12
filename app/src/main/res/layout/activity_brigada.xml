@@ -1,5 +1,4 @@
-<!-- res/layout/activity_brigada.xml -->
-<?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -37,11 +36,10 @@
         android:text="Confirmar" />
 
     <Button
-        android:id="@+id/cancelarButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cancelar" />
-
+            android:id="@+id/cancelarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"/>
     <ListView
         android:id="@+id/brigadasListView"
         android:layout_width="match_parent"

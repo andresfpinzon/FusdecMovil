@@ -1,0 +1,49 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <EditText
+            android:id="@+id/nombreComandoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la comando"/>
+    <EditText
+            android:id="@+id/ubicacionComandoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ubicación del comando" />
+
+    <EditText
+            android:id="@+id/fundacionIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID de la fundacion " />
+
+    <EditText
+            android:id="@+id/brigadaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Brigadas (separadas por comas)" />
+
+    <Button
+            android:id="@+id/confirmarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar" />
+
+    <Button
+            android:id="@+id/cancelarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"/>
+    <ListView
+            android:id="@+id/ComandoListView"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"/>
+    <com.google.android.gms.maps.MapView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/mapView"/>
+</LinearLayout>

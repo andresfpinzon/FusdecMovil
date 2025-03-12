@@ -1,10 +1,5 @@
 package com.example.fusdecmovil.ui.activities.Brigada
 
-class BrigadaActivity {
-
-
-}package com.example.fusdecmovil.ui.activities.Brigada
-
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
